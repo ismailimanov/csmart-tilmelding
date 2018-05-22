@@ -10,16 +10,30 @@ Author URI: https://imanov.io
 
 add_action( 'admin_menu', 'csmart_tilmelding_menu' );
 
-/** Step 1. */
-function csmart_tilmelding_menu() {
-    add_options_page( 'test 1', 'Test 2', 'manage_options', 'my-unique-identifier', 'my_plugin_options' );
+function csmart_tilmelding_menu(){
+
+    $page_title = 'C-Smart Tilmelding1';
+    $menu_title = 'C-Smart Tilmelding2';
+    $capability = 'manage_options';
+    $menu_slug  = 'csmart-tilmelding';
+    $function   = 'csmart_tilmelding_side';
+    $icon_url   = 'dashicons-media-code';
+    $position   = 2;
+
+    add_menu_page( $page_title,
+        $menu_title,
+        $capability,
+        $menu_slug,
+        $function,
+        $icon_url,
+        $position );
 }
 
-/** Step 3. */
-function my_plugin_options() {
+function csmart_tilmelding_side() {
     if ( !current_user_can( 'manage_options' ) )  {
         wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
     }
+
     echo '<div class="wrap">';
     echo '<p>Indhold</p>';
     echo '</div>';

@@ -27,8 +27,8 @@
       <file leaf-file-name="csmart-tilmelding.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/csmart-tilmelding.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            <state relative-caret-position="465">
+              <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
               <folding>
                 <element signature="e#6#190#0#PHP" expanded="true" />
               </folding>
@@ -41,6 +41,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>admin_menu</find>
+      <find>extra_post_info_menu</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -189,12 +190,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526995861754</updated>
-      <workItem from="1526995863473" duration="485000" />
+      <workItem from="1526995863473" duration="944000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="485000" />
+    <option name="totallyTimeSpent" value="944000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="6" />
