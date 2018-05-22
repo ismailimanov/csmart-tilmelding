@@ -21,10 +21,10 @@ function csmart_tilmelding_menu(){
     $position   = 2;
 
     add_menu_page( $page_title,
-        $menu_title,
-        $capability,
-        $menu_slug,
-        $function,
-        $icon_url,
-        $position );
+                  $menu_title,
+                  $capability,
+                  $menu_slug,
+                  $function,
+                  $icon_url,
+                  $position );
 }
