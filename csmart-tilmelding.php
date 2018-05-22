@@ -12,8 +12,8 @@ add_action( 'admin_menu', 'csmart_tilmelding_menu' );
 
 function csmart_tilmelding_menu(){
 
-    $page_title = 'C-Smart Tilmelding1';
-    $menu_title = 'C-Smart Tilmelding2';
+    $page_title = 'Tilmeldinger';
+    $menu_title = 'C-Smart Tilmelding';
     $capability = 'manage_options';
     $menu_slug  = 'csmart-tilmelding';
     $function   = 'csmart_tilmelding_side';
@@ -27,14 +27,4 @@ function csmart_tilmelding_menu(){
         $function,
         $icon_url,
         $position );
-}
-
-function csmart_tilmelding_side() {
-    if ( !current_user_can( 'manage_options' ) )  {
-        wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
-    }
-
-    echo '<div class="wrap">';
-    echo '<p>Indhold</p>';
-    echo '</div>';
 }
