@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Poppins:300,400');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.content {
+    background: #FFF;
+    border-radius: 7px;
+    padding: 1em;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.StripeElement {
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+    width: 100%;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    display: block;
+}
+.StripeElement--focus {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+}
+.StripeElement--invalid {
+    border-color: #fa755a;
+}
+.StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.stripe-button-el, .stripe-button-el span {
+    width: 100% !important;
+    background: #3f7fe0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background-image: none !important;
+    background-color: none !important;
+}

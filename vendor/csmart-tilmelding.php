@@ -32,17 +32,14 @@ function csmart_tilmelding_menu(){
 }
 
 function csmart_tilmelding_side() {
-    include("config.php");
     if ( !current_user_can( 'manage_options' ) )  {
         wp_die( __( 'Du har ikke adgang til denne side.' ) );
     }
-    
-    $hentData = mysqli_query($link, "SELECT * FROM tilmeldinger ORDER BY id DESC");
 ?>
 <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet">
 <div class="wrap">
     <h1>Tilmeldinger</h1>
-    <table id="tilmeldinger" class="dataTable">
+    <table id="tilmeldinger">
         <thead>
             <th>ID</th>
             <th>Fornavn</th>
@@ -51,25 +48,17 @@ function csmart_tilmelding_side() {
             <th>Virksomhed</th>
             <th>CVR. Nr.</th>
             <th>Telefon nr.</th>
-            <th>Oprettelse</th>
         </thead>
         <tbody>
-            <?php
-                while($row = mysqli_fetch_array($hentData)){
-                    ?>
             <tr>
-                <td><?=$row["id"]?></td>
-                <td><?=$row["fornavn"]?></td>
-                <td><?=$row["efternavn"]?></td>
-                <td><?=$row["email"]?></td>
-                <td><?=$row["virksomhed"]?></td>
-                <td><?=$row["cvr"]?></td>
-                <td><?=$row["telefon"]?></td>
-                <td><?=date("d.m.Y H:i", strtotime($row["oprettelse"]))?></td>
+                <td>1</td>
+                <td>Ismail</td>
+                <td>Imanov</td>
+                <td>ismail@imanov.dk</td>
+                <td>AZ App</td>
+                <td>12345678</td>
+                <td>50501441</td>
             </tr>
-            <?php
-                }
-            ?>
         </tbody>
     </table>
 </div>
